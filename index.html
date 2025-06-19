@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Flappy Bird</title>
+    <link rel="shortcut icon" href="/assets/bird.png" type="image/x-icon" />
     <style>
       html,
       body {
@@ -12,13 +13,11 @@
         height: 100%;
         background-color: #87ceeb;
       }
-
       canvas {
         display: block;
         width: 100vw;
         height: 100vh;
       }
-
       #fullscreenBtn {
         position: fixed;
         bottom: 20px;
@@ -32,11 +31,9 @@
         cursor: pointer;
         z-index: 1000;
       }
-
       #fullscreenBtn:hover {
         background: rgba(0, 0, 0, 0.7);
       }
-
       @media (max-width: 768px) {
         #fullscreenBtn {
           display: none;
@@ -47,6 +44,6 @@
   <body>
     <canvas id="gameCanvas"></canvas>
     <button id="fullscreenBtn" title="Toggle Fullscreen (F)">🔳</button>
-    <script src="game.js"></script>
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>
